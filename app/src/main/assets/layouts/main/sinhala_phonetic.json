@@ -1,75 +1,50 @@
-// Sinhala Phonetic (Helakuru-style) keyboard layout for HeliBoard
-// Key mapping: Roman letters -> Sinhala phonetic equivalents
-// Default (unshifted): basic consonants / vowel signs
-// Shift / ManualOrLocked: aspirated / long vowel variants
-// Popup keys: additional related characters
-//
-// Row 1: q w e r t y u i o p
-// Row 2: a s d f g h j k l
-// Row 3: z x c v b n m
-//
-// Phonetic guide:
-//   q=ද, w=ව, e=ෙ/එ, r=ර, t=ට, y=ය, u=ු/උ, i=ි/ඉ, o=ො/ඔ, p=ප
-//   a=ා/අ, s=ස, d=ඩ, f=ෆ, g=ග, h=හ, j=ජ, k=ක, l=ල
-//   z=ං, x=්, c=ච, v=ව, b=බ, n=න, m=ම
-
 [
   [
-    // q -> ද (soft da) | shift -> ධ (aspirated da) | popup: ඳ (prenasalized da)
     {
       "$": "shift_state_selector",
       "manualOrLocked": { "label": "ධ", "popup": { "relevant": [{ "label": "ඳ" }] } },
       "default": { "label": "ද", "popup": { "relevant": [{ "label": "ධ" }, { "label": "ඳ" }] } }
     },
-    // w -> ව | popup: ‍ (ZWJ)
     {
       "$": "shift_state_selector",
       "manualOrLocked": { "label": "ව" },
       "default": { "label": "ව" }
     },
-    // e -> ෙ (e vowel sign) | shift -> ේ (ee vowel sign) | popup: එ, ඒ, ෛ, ඓ (independent)
     {
       "$": "shift_state_selector",
       "manualOrLocked": { "label": "ේ", "popup": { "main": { "label": "ඒ" }, "relevant": [{ "label": "ෛ" }, { "label": "ඓ" }] } },
       "default": { "label": "ෙ", "popup": { "main": { "label": "එ" }, "relevant": [{ "label": "ේ" }, { "label": "ඒ" }, { "label": "ෛ" }, { "label": "ඓ" }] } }
     },
-    // r -> ර | shift -> ්‍ර (rakaransaya) | popup: ඍ, ෘ
     {
       "$": "shift_state_selector",
       "manualOrLocked": { "$": "multi_text_key", "codePoints": [3530, 8205, 3619], "label": "්‍ර", "popup": { "relevant": [{ "label": "ඍ" }, { "label": "ෘ" }] } },
       "default": { "label": "ර", "popup": { "relevant": [{ "label": "ඍ" }, { "label": "ෘ" }, { "$": "multi_text_key", "codePoints": [3530, 8205, 3619], "label": "්‍ර" }] } }
     },
-    // t -> ට (hard/retroflex ta) | shift -> ත (soft/dental ta) | popup: ඨ, ථ
     {
       "$": "shift_state_selector",
       "manualOrLocked": { "label": "ත", "popup": { "relevant": [{ "label": "ථ" }] } },
       "default": { "label": "ට", "popup": { "relevant": [{ "label": "ත" }, { "label": "ඨ" }, { "label": "ථ" }] } }
     },
-    // y -> ය | shift -> ්‍ය (yansaya)
     {
       "$": "shift_state_selector",
       "manualOrLocked": { "$": "multi_text_key", "codePoints": [3530, 8205, 3618], "label": "්‍ය" },
       "default": { "label": "ය", "popup": { "relevant": [{ "$": "multi_text_key", "codePoints": [3530, 8205, 3618], "label": "්‍ය" }] } }
     },
-    // u -> ු (u vowel sign) | shift -> ූ (uu vowel sign) | popup: උ, ඌ (independent)
     {
       "$": "shift_state_selector",
       "manualOrLocked": { "label": "ූ", "popup": { "main": { "label": "ඌ" } } },
       "default": { "label": "ු", "popup": { "main": { "label": "උ" }, "relevant": [{ "label": "ූ" }, { "label": "ඌ" }] } }
     },
-    // i -> ි (i vowel sign) | shift -> ී (ii vowel sign) | popup: ඉ, ඊ (independent)
     {
       "$": "shift_state_selector",
       "manualOrLocked": { "label": "ී", "popup": { "main": { "label": "ඊ" } } },
       "default": { "label": "ි", "popup": { "main": { "label": "ඉ" }, "relevant": [{ "label": "ී" }, { "label": "ඊ" }] } }
     },
-    // o -> ො (o vowel sign) | shift -> ෝ (oo vowel sign) | popup: ඔ, ඕ, ෞ, ඖ (independent)
     {
       "$": "shift_state_selector",
       "manualOrLocked": { "label": "ෝ", "popup": { "main": { "label": "ඕ" }, "relevant": [{ "label": "ෞ" }, { "label": "ඖ" }] } },
       "default": { "label": "ො", "popup": { "main": { "label": "ඔ" }, "relevant": [{ "label": "ෝ" }, { "label": "ඕ" }, { "label": "ෞ" }, { "label": "ඖ" }] } }
     },
-    // p -> ප | shift -> ඵ (aspirated)
     {
       "$": "shift_state_selector",
       "manualOrLocked": { "label": "ඵ" },
@@ -77,55 +52,46 @@
     }
   ],
   [
-    // a -> ා (aa vowel sign) | shift -> අ (independent a) | popup: ආ, ැ, ෑ, ඇ, ඈ
     {
       "$": "shift_state_selector",
       "manualOrLocked": { "label": "අ", "popup": { "main": { "label": "ආ" }, "relevant": [{ "label": "ා" }, { "label": "ෑ" }, { "label": "ඈ" }, { "label": "ෙ" }, { "label": "ි" }] } },
       "default": { "label": "ා", "popup": { "main": { "label": "ආ" }, "relevant": [{ "label": "අ" }, { "label": "ැ" }, { "label": "ෑ" }, { "label": "ඇ" }, { "label": "ඈ" }] } }
     },
-    // s -> ස | shift -> ශ | popup: ෂ
     {
       "$": "shift_state_selector",
       "manualOrLocked": { "label": "ශ", "popup": { "relevant": [{ "label": "ෂ" }] } },
       "default": { "label": "ස", "popup": { "relevant": [{ "label": "ශ" }, { "label": "ෂ" }] } }
     },
-    // d -> ඩ (hard/retroflex da) | shift -> ද (soft/dental da) | popup: ධ, ඪ, ඬ
     {
       "$": "shift_state_selector",
       "manualOrLocked": { "label": "ද", "popup": { "relevant": [{ "label": "ධ" }, { "label": "ඩ" }, { "label": "ඪ" }, { "label": "ඬ" }] } },
       "default": { "label": "ඩ", "popup": { "relevant": [{ "label": "ද" }, { "label": "ධ" }, { "label": "ඪ" }, { "label": "ඬ" }] } }
     },
-    // f -> ෆ
     {
       "$": "shift_state_selector",
       "manualOrLocked": { "label": "ෆ" },
       "default": { "label": "ෆ" }
     },
-    // g -> ග | shift -> ඝ (aspirated) | popup: ඟ (prenasalized)
     {
       "$": "shift_state_selector",
       "manualOrLocked": { "label": "ඝ", "popup": { "relevant": [{ "label": "ඟ" }] } },
       "default": { "label": "ග", "popup": { "relevant": [{ "label": "ඝ" }, { "label": "ඟ" }] } }
     },
-    // h -> හ | shift -> ඃ (visargaya) | popup: ඃ
     {
       "$": "shift_state_selector",
       "manualOrLocked": { "label": "ඃ" },
       "default": { "label": "හ", "popup": { "relevant": [{ "label": "ඃ" }] } }
     },
-    // j -> ජ | shift -> ඣ (aspirated)
     {
       "$": "shift_state_selector",
       "manualOrLocked": { "label": "ඣ" },
       "default": { "label": "ජ", "popup": { "relevant": [{ "label": "ඣ" } , { "label": "ඤ" }] } }
     },
-    // k -> ක | shift -> ඛ (aspirated)
     {
       "$": "shift_state_selector",
       "manualOrLocked": { "label": "ඛ" },
       "default": { "label": "ක", "popup": { "relevant": [{ "label": "ඛ" }] } }
     },
-    // l -> ල | shift -> ළ | popup: ළු
     {
       "$": "shift_state_selector",
       "manualOrLocked": { "label": "ළ", "popup": { "relevant": [{ "$": "multi_text_key", "codePoints": [3529, 3640], "label": "ළු" }] } },
@@ -133,43 +99,36 @@
     }
   ],
   [
-    // z -> ං (anusvara) | shift -> ඞ (ng) | popup: ඞ
     {
       "$": "shift_state_selector",
       "manualOrLocked": { "label": "ඞ" },
       "default": { "label": "ං", "popup": { "relevant": [{ "label": "ඞ" }] } }
     },
-    // x -> ් (al kirima/virama) | shift -> ‍ (ZWJ for conjuncts)
     {
       "$": "shift_state_selector",
       "manualOrLocked": { "code": 8205, "label": "‍" },
       "default": { "label": "්", "popup": { "relevant": [{ "code": 8205, "label": "‍" }] } }
     },
-    // c -> ච | shift -> ඡ (aspirated) | popup: ඡ
     {
       "$": "shift_state_selector",
       "manualOrLocked": { "label": "ඡ" },
       "default": { "label": "ච", "popup": { "relevant": [{ "label": "ඡ" }] } }
     },
-    // v -> ව (same as w, alternative)
     {
       "$": "shift_state_selector",
       "manualOrLocked": { "label": "ව" },
       "default": { "label": "ව" }
     },
-    // b -> බ | shift -> භ (aspirated) | popup: ඹ (prenasalized ba)
     {
       "$": "shift_state_selector",
       "manualOrLocked": { "label": "භ", "popup": { "relevant": [{ "label": "ඹ" }] } },
       "default": { "label": "බ", "popup": { "relevant": [{ "label": "භ" }, { "label": "ඹ" }] } }
     },
-    // n -> න | shift -> ණ (retroflex na) | popup: ඤ, ඦ
     {
       "$": "shift_state_selector",
       "manualOrLocked": { "label": "ණ", "popup": { "relevant": [{ "label": "ඤ" }] } },
       "default": { "label": "න", "popup": { "relevant": [{ "label": "ණ" }, { "label": "ඤ" }] } }
     },
-    // m -> ම | shift -> ඹ (prenasalized ba alt) | popup: ඹ, ං
     {
       "$": "shift_state_selector",
       "manualOrLocked": { "label": "ඹ" },
