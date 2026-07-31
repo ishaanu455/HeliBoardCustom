@@ -1223,7 +1223,7 @@
         android:imeSubtypeLocale="si_LK"
         android:languageTag="si-LK"
         android:imeSubtypeMode="keyboard"
-        android:imeSubtypeExtraValue="KeyboardLayoutSet=MAIN:qwerty,CombiningRules=sinhala_phonetic,NoShiftProximityCorrection,AsciiCapable,EmojiCapable"
+        android:imeSubtypeExtraValue="KeyboardLayoutSet=MAIN:sinhala_phonetic,CombiningRules=sinhala_phonetic,NoShiftProximityCorrection,AsciiCapable,EmojiCapable"
         android:isAsciiCapable="true"
     />
 </input-method>

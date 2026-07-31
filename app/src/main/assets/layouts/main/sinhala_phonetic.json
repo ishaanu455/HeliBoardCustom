@@ -1,0 +1,34 @@
+[
+  [
+    { "label": "q", "popup": { "main": { "label": "ද" } } },
+    { "label": "w", "popup": { "main": { "label": "ව" } } },
+    { "label": "e", "popup": { "main": { "label": "එ" } } },
+    { "label": "r", "popup": { "main": { "label": "ර" } } },
+    { "label": "t", "popup": { "main": { "label": "ට" } } },
+    { "label": "y", "popup": { "main": { "label": "ය" } } },
+    { "label": "u", "popup": { "main": { "label": "උ" } } },
+    { "label": "i", "popup": { "main": { "label": "ඉ" } } },
+    { "label": "o", "popup": { "main": { "label": "ඔ" } } },
+    { "label": "p", "popup": { "main": { "label": "ප" } } }
+  ],
+  [
+    { "label": "a", "popup": { "main": { "label": "අ" } } },
+    { "label": "s", "popup": { "main": { "label": "ස" } } },
+    { "label": "d", "popup": { "main": { "label": "ඩ" } } },
+    { "label": "f", "popup": { "main": { "label": "ෆ" } } },
+    { "label": "g", "popup": { "main": { "label": "ග" } } },
+    { "label": "h", "popup": { "main": { "label": "හ" } } },
+    { "label": "j", "popup": { "main": { "label": "ජ" } } },
+    { "label": "k", "popup": { "main": { "label": "ක" } } },
+    { "label": "l", "popup": { "main": { "label": "ල" } } }
+  ],
+  [
+    { "label": "z", "popup": { "main": { "label": "‍" } } },
+    { "label": "x", "popup": { "main": { "label": "ං" } } },
+    { "label": "c", "popup": { "main": { "label": "ච" } } },
+    { "label": "v", "popup": { "main": { "label": "ව" } } },
+    { "label": "b", "popup": { "main": { "label": "බ" } } },
+    { "label": "n", "popup": { "main": { "label": "න" } } },
+    { "label": "m", "popup": { "main": { "label": "ම" } } }
+  ]
+]
