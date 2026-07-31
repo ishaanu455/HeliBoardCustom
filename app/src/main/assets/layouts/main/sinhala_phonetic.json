@@ -1,34 +1,136 @@
 [
   [
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "!" },
+      "default": { "label": "1", "popup": { "main": { "label": "!" } } }
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "@" },
+      "default": { "label": "2", "popup": { "main": { "label": "@" } } }
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "#" },
+      "default": { "label": "3", "popup": { "main": { "label": "#" } } }
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "$" },
+      "default": { "label": "4", "popup": { "main": { "label": "$" } } }
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "%" },
+      "default": { "label": "5", "popup": { "main": { "label": "%" } } }
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "^" },
+      "default": { "label": "6", "popup": { "main": { "label": "^" } } }
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "&" },
+      "default": { "label": "7", "popup": { "main": { "label": "&" } } }
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "*" },
+      "default": { "label": "8", "popup": { "main": { "label": "*" } } }
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "(" },
+      "default": { "label": "9", "popup": { "main": { "label": "(" } } }
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": ")" },
+      "default": { "label": "0", "popup": { "main": { "label": ")" } } }
+    }
+  ],
+  [
     { "label": "q", "popup": { "main": { "label": "ද" } } },
     { "label": "w", "popup": { "main": { "label": "ව" } } },
-    { "label": "e", "popup": { "main": { "label": "එ" } } },
-    { "label": "r", "popup": { "main": { "label": "ර" } } },
-    { "label": "t", "popup": { "main": { "label": "ට" } } },
+    { "$": "shift_state_selector",
+      "unshifted": { "label": "e", "popup": { "main": { "label": "එ" } } },
+      "shifted":   { "label": "E", "popup": { "main": { "label": "ඒ" } } },
+      "manualOrLocked": { "label": "E", "popup": { "main": { "label": "ඒ" } } },
+      "default": { "label": "e", "popup": { "main": { "label": "එ" } } }
+    },
+    { "$": "shift_state_selector",
+      "unshifted": { "label": "r", "popup": { "main": { "label": "ර" } } },
+      "shifted":   { "label": "R", "popup": { "main": { "label": "ඍ" } } },
+      "manualOrLocked": { "label": "R", "popup": { "main": { "label": "ඍ" } } },
+      "default": { "label": "r", "popup": { "main": { "label": "ර" } } }
+    },
+    { "$": "shift_state_selector",
+      "unshifted": { "label": "t", "popup": { "main": { "label": "ට" } } },
+      "shifted":   { "label": "T", "popup": { "main": { "label": "ත" } } },
+      "manualOrLocked": { "label": "T", "popup": { "main": { "label": "ත" } } },
+      "default": { "label": "t", "popup": { "main": { "label": "ට" } } }
+    },
     { "label": "y", "popup": { "main": { "label": "ය" } } },
-    { "label": "u", "popup": { "main": { "label": "උ" } } },
-    { "label": "i", "popup": { "main": { "label": "ඉ" } } },
-    { "label": "o", "popup": { "main": { "label": "ඔ" } } },
+    { "$": "shift_state_selector",
+      "unshifted": { "label": "u", "popup": { "main": { "label": "උ" } } },
+      "shifted":   { "label": "U", "popup": { "main": { "label": "ඌ" } } },
+      "manualOrLocked": { "label": "U", "popup": { "main": { "label": "ඌ" } } },
+      "default": { "label": "u", "popup": { "main": { "label": "උ" } } }
+    },
+    { "$": "shift_state_selector",
+      "unshifted": { "label": "i", "popup": { "main": { "label": "ඉ" } } },
+      "shifted":   { "label": "I", "popup": { "main": { "label": "ඊ" } } },
+      "manualOrLocked": { "label": "I", "popup": { "main": { "label": "ඊ" } } },
+      "default": { "label": "i", "popup": { "main": { "label": "ඉ" } } }
+    },
+    { "$": "shift_state_selector",
+      "unshifted": { "label": "o", "popup": { "main": { "label": "ඔ" } } },
+      "shifted":   { "label": "O", "popup": { "main": { "label": "ඕ" } } },
+      "manualOrLocked": { "label": "O", "popup": { "main": { "label": "ඕ" } } },
+      "default": { "label": "o", "popup": { "main": { "label": "ඔ" } } }
+    },
     { "label": "p", "popup": { "main": { "label": "ප" } } }
   ],
   [
-    { "label": "a", "popup": { "main": { "label": "අ" } } },
-    { "label": "s", "popup": { "main": { "label": "ස" } } },
-    { "label": "d", "popup": { "main": { "label": "ඩ" } } },
+    { "$": "shift_state_selector",
+      "unshifted": { "label": "a", "popup": { "main": { "label": "අ" } } },
+      "shifted":   { "label": "A", "popup": { "main": { "label": "ඇ" } } },
+      "manualOrLocked": { "label": "A", "popup": { "main": { "label": "ඇ" } } },
+      "default": { "label": "a", "popup": { "main": { "label": "අ" } } }
+    },
+    { "$": "shift_state_selector",
+      "unshifted": { "label": "s", "popup": { "main": { "label": "ස" } } },
+      "shifted":   { "label": "S", "popup": { "main": { "label": "ෂ" } } },
+      "manualOrLocked": { "label": "S", "popup": { "main": { "label": "ෂ" } } },
+      "default": { "label": "s", "popup": { "main": { "label": "ස" } } }
+    },
+    { "$": "shift_state_selector",
+      "unshifted": { "label": "d", "popup": { "main": { "label": "ඩ" } } },
+      "shifted":   { "label": "D", "popup": { "main": { "label": "ඩ" } } },
+      "manualOrLocked": { "label": "D", "popup": { "main": { "label": "ඩ" } } },
+      "default": { "label": "d", "popup": { "main": { "label": "ඩ" } } }
+    },
     { "label": "f", "popup": { "main": { "label": "ෆ" } } },
     { "label": "g", "popup": { "main": { "label": "ග" } } },
     { "label": "h", "popup": { "main": { "label": "හ" } } },
     { "label": "j", "popup": { "main": { "label": "ජ" } } },
     { "label": "k", "popup": { "main": { "label": "ක" } } },
-    { "label": "l", "popup": { "main": { "label": "ල" } } }
+    { "$": "shift_state_selector",
+      "unshifted": { "label": "l", "popup": { "main": { "label": "ල" } } },
+      "shifted":   { "label": "L", "popup": { "main": { "label": "ළ" } } },
+      "manualOrLocked": { "label": "L", "popup": { "main": { "label": "ළ" } } },
+      "default": { "label": "l", "popup": { "main": { "label": "ල" } } }
+    }
   ],
   [
     { "label": "z", "popup": { "main": { "label": "‍" } } },
-    { "label": "x", "popup": { "main": { "label": "ං" } } },
+    { "$": "shift_state_selector",
+      "unshifted": { "label": "x", "popup": { "main": { "label": "ං" } } },
+      "shifted":   { "label": "X", "popup": { "main": { "label": "ඃ" } } },
+      "manualOrLocked": { "label": "X", "popup": { "main": { "label": "ඃ" } } },
+      "default": { "label": "x", "popup": { "main": { "label": "ං" } } }
+    },
     { "label": "c", "popup": { "main": { "label": "ච" } } },
     { "label": "v", "popup": { "main": { "label": "ව" } } },
     { "label": "b", "popup": { "main": { "label": "බ" } } },
-    { "label": "n", "popup": { "main": { "label": "න" } } },
+    { "$": "shift_state_selector",
+      "unshifted": { "label": "n", "popup": { "main": { "label": "න" } } },
+      "shifted":   { "label": "N", "popup": { "main": { "label": "ණ" } } },
+      "manualOrLocked": { "label": "N", "popup": { "main": { "label": "ණ" } } },
+      "default": { "label": "n", "popup": { "main": { "label": "න" } } }
+    },
     { "label": "m", "popup": { "main": { "label": "ම" } } }
   ]
 ]
