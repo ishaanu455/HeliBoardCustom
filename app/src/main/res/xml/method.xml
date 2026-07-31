@@ -1216,4 +1216,14 @@
         android:imeSubtypeExtraValue="AsciiCapable,EnabledWhenDefaultIsNotAsciiCapable,EmojiCapable"
         android:isAsciiCapable="true"
     />
+    <!-- Sinhala Phonetic (Helakuru-style): type Roman letters to get Sinhala -->
+    <subtype android:icon="@drawable/ic_ime_switcher"
+        android:label="@string/subtype_generic"
+        android:subtypeId="0x5c6b3bdf"
+        android:imeSubtypeLocale="si_LK"
+        android:languageTag="si-LK"
+        android:imeSubtypeMode="keyboard"
+        android:imeSubtypeExtraValue="KeyboardLayoutSet=MAIN:sinhala_phonetic,CombiningRules=sinhala_phonetic,NoShiftProximityCorrection,EmojiCapable"
+        android:isAsciiCapable="true"
+    />
 </input-method>
