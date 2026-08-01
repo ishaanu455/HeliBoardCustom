@@ -154,6 +154,7 @@ public class SettingsValues {
     public final boolean mSuggestionsEnabled;
     private final boolean mOverrideShowingSuggestions;
     public final boolean mSuggestClipboardContent;
+    public final boolean mShowRecentEmojiRow;
     public final boolean mIncognitoModeEnabled;
     public final boolean mLongPressSymbolsForNumpad;
 
@@ -235,6 +236,7 @@ public class SettingsValues {
         mBigramPredictionEnabled = prefs.getBoolean(Settings.PREF_BIGRAM_PREDICTIONS, Defaults.PREF_BIGRAM_PREDICTIONS);
         mSuggestPunctuation = prefs.getBoolean(Settings.PREF_SUGGEST_PUNCTUATION, Defaults.PREF_SUGGEST_PUNCTUATION);
         mSuggestClipboardContent = prefs.getBoolean(Settings.PREF_SUGGEST_CLIPBOARD_CONTENT, Defaults.PREF_SUGGEST_CLIPBOARD_CONTENT);
+        mShowRecentEmojiRow = prefs.getBoolean(Settings.PREF_SHOW_RECENT_EMOJI_ROW, Defaults.PREF_SHOW_RECENT_EMOJI_ROW);
         mDoubleSpacePeriodTimeout = 1100; // ms
         mHasHardwareKeyboard = Settings.readHasHardwareKeyboard(res.getConfiguration());
         boolean isLandscape = mDisplayOrientation == Configuration.ORIENTATION_LANDSCAPE;

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SPDX-License-Identifier: GPL-3.0-only -->
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recent_emoji_row"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/config_suggestions_strip_height"
+    android:visibility="gone"
+    android:scrollbars="none"
+    android:fillViewport="false"
+    style="?attr/suggestionStripViewStyle" >
+
+    <LinearLayout
+        android:id="@+id/recent_emoji_row_container"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical" />
+
+</HorizontalScrollView>

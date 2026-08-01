@@ -771,6 +771,17 @@ public class LatinIME extends InputMethodService implements
             mSuggestionStripView.setRtl(mRichImm.getCurrentSubtype().isRtlSubtype());
             mSuggestionStripView.setListener(this, view);
         }
+        updateRecentEmojiRow(view);
+    }
+
+    /**
+     * Populates (or hides) the persistent recent-emoji row, which sits right above the main
+     * keyboard (i.e. above the number row), independent of the suggestion strip state.
+     */
+    public void updateRecentEmojiRow(View view) {
+        final View rowScrollView = view.findViewById(R.id.recent_emoji_row);
+        final android.widget.LinearLayout container = view.findViewById(R.id.recent_emoji_row_container);
+        helium314.keyboard.keyboard.emoji.RecentEmojis.INSTANCE.updateRow(this, rowScrollView, container);
     }
 
     @Override
@@ -996,6 +1007,8 @@ public class LatinIME extends InputMethodService implements
                 currentSettingsValues.mGestureInputEnabled,
                 currentSettingsValues.mGestureTrailEnabled,
                 currentSettingsValues.mGestureFloatingPreviewTextEnabled);
+
+        if (mInputView != null) updateRecentEmojiRow(mInputView);
 
         if (TRACE) Debug.startMethodTracing("/data/trace/latinime");
     }
