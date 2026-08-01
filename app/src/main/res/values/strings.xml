@@ -178,6 +178,10 @@
     <string name="suggest_clipboard_content">Suggest clipboard content</string>
     <!-- Description for the "suggest clipboard content" option. This makes the primary clipboard content visible in the suggestion strip view. -->
     <string name="suggest_clipboard_content_summary">Show recently copied clipboard content as a suggestion</string>
+    <!-- Option to enable a static row showing recently used emojis, always visible above the number row. -->
+    <string name="show_recent_emoji_row">Show recent emoji row</string>
+    <!-- Description for the "show recent emoji row" option. -->
+    <string name="show_recent_emoji_row_summary">Always show a row of your recently used emojis, above the number row</string>
     <!-- Option to enable gesture input. The user can input a word by tracing the letters of a word without releasing the finger from the screen.-->
     <string name="gesture_input">Enable gesture typing</string>
     <!-- Description for "gesture_input" option. The user can input a word by tracing the letters of a word without releasing the finger from the screen.-->
